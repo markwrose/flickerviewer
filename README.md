@@ -73,7 +73,7 @@ The flickrviewer requires 2 attributes.
 	
 In the sample application app.js you first need to import the flickrviewer component as shown below:
 
-import FlickrViewer from './src/components/flickrviewer'
+	import FlickrViewer from './src/components/flickrviewer'
 
 and when you call the component pass the attributes via props as shown below:
 

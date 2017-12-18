@@ -54,7 +54,7 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 This component and included sample application were created using React Native and Expo.
 
-File Structure:
+## File Structure:
 
 The flickrviewer.js component file located in the ./src/component/ directory is the where the code for the component is located.
 
@@ -62,7 +62,7 @@ The app.js in the FlickrViewer or project root directory is the sample applicati
 
 The sample application requires all the directories and files under the ./src directory
 
-Required Attributes:
+## Required Attributes:
 
 The flickrviewer requires 2 attributes. 
 
@@ -94,7 +94,7 @@ Below is the config.json file for my implementation.
 }
 
 
-Installing & Running the sample application:
+## Installing & Running the sample application:
 
 Assuming that you have Node installed, you can use npm to install the create-react-native-app command line utility:
 
@@ -127,6 +127,40 @@ From your local project file:
 
 Install the Expo client app on your iOS or Android phone and connect to the same wireless network as your computer. Using the Expo app, scan the QR code from your terminal to open your project.
 
+## Testing the components:
+I utilized jest for my unit testing.  
+
+Install Jest using npm:
+
+npm install --save-dev jest
+
+In the package.json file make sure the "sripts" entry is followed by "test" : "jest" similar to below:
+
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+
+In the ./src/components/__tests__/ directory you will find unit tests for each of the components.  The results of the tests are published in the ./src/components/__tests__/snapshots/ directory
+
+Since the flickrviewer component uses async promises, I created a manual mock that simulates the promise.  The mock can be found in the ./src/components/__mocks__/flickrviewer.js file. 
+
+Inorder for the test scripts to function properly, the flickrviewer.test.js will have to include:
+
+jest.mock('../flickrviewer');
+
+If you examine the ./src/components/__mocks__/flickrviewer.js file you will see that I assigned the variable d to a json object that represents the object the Flickr Rest API returns.
+
+Inorder to run the test you will need to copy the ./src/components/__tests__/ directory and the ./src/components/__mocks__ directory to your local repository.
+
+Do no copy the .../__tests__/snapshots directory as you will generate your own snapshots.
+
+To execute the tests from npm:
+
+sudo npm test
+
+You should see results similar to the below:
 
 
 	 

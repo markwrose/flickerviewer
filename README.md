@@ -162,7 +162,7 @@ sudo npm test
 
 You should see results similar to the below:
 
-
+![screenshot from 2017-12-18 15-59-13](https://user-images.githubusercontent.com/34554955/34127989-25acbec6-e40d-11e7-9dc2-8803f0788baa.png)
 	 
 
 # flickrviewer

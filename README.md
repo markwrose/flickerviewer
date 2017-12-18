@@ -64,16 +64,22 @@ The sample application requires all the directories and files under the ./src di
 
 Required Attributes:
 
-The flickrviewer requires 2 attributes.  
+The flickrviewer requires 2 attributes. 
+
 	- DisplayInterval : determines how frequently the image is refreshed.
+	
 	- ApiKey : your access key to the Flickr api – you can request a key here: https://www.flickr.com/services/apps/create/apply/
-In the sample application bot of these attributes are managed via the config.json file that is located in the FlickrViewer or project root directory.
+	
+In the sample application both of these attributes are managed via the config.json file that is located in the FlickrViewer or project root directory.
 
 Below is the config.json file for my implementation.
 
 {
+
   apiKey :"b8456b957137d462e7c8088dad495c9b", //Enter the Flickr apiKey for accessing your registered Flickr App
+  
   timeInterval : "3000" //Enter the displayInterval in milliseconds
+  
 }
 
 
@@ -99,13 +105,13 @@ From your local project file:
 
 	- Replace the app.js file with the one provide in this repository.
 
-	- Copy everything in this repositories ./src directory and recreate the same 	directories in your project folder.
+	- Copy everything in this repositories ./src directory and recreate the same directories in your project folder.
 
 	- Copy the config.json file and place it in your projects main directory.
 
-	- Update the local config.json file to include Your apiKey for accessing the 	Flickr API.
+	- Update the local config.json file to include Your apiKey for accessing the Flickr API.
 
-	- Change the timeInterval value in config.json if you like, by default it is 	3 seconds or 3000 milliseconds
+	- Change the timeInterval value in config.json if you like, by default it is 3 seconds or 3000 milliseconds
 
 
 Install the Expo client app on your iOS or Android phone and connect to the same wireless network as your computer. Using the Expo app, scan the QR code from your terminal to open your project.

@@ -77,7 +77,7 @@ In the sample application app.js you first need to import the flickrviewer compo
 
 and when you call the component pass the attributes via props as shown below:
 
-<FlickrViewer displayInterval={this.state.displayInterval} apiKey={apiKey} />
+	<FlickrViewer displayInterval={this.state.displayInterval} apiKey={apiKey} />
 
 This will be clear when you look at the code of the app.js file.
 	

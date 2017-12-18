@@ -1,6 +1,7 @@
+
 React Native Flickr Random Image Viewing Component
 
-
+![image-2](https://user-images.githubusercontent.com/34554955/34119103-f7445990-e3ee-11e7-872a-e94c23d7f224.jpg)
 
 
 

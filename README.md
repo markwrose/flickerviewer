@@ -70,6 +70,16 @@ The flickrviewer requires 2 attributes.
 	
 	- ApiKey : your access key to the Flickr api – you can request a key here: https://www.flickr.com/services/apps/create/apply/
 	
+In the sample application app.js you first need to import the flickrviewer component as shown below:
+
+import FlickrViewer from './src/components/flickrviewer'
+
+and when you call the component pass the attributes via props as shown below:
+
+<FlickrViewer displayInterval={this.state.displayInterval} apiKey={apiKey} />
+
+This will be clear when you look at the code of the app.js file.
+	
 In the sample application both of these attributes are managed via the config.json file that is located in the FlickrViewer or project root directory.
 
 Below is the config.json file for my implementation.

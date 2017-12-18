@@ -68,7 +68,8 @@ The flickrviewer requires 2 attributes.
 
 	- DisplayInterval : determines how frequently the image is refreshed.
 	
-	- ApiKey : your access key to the Flickr api – you can request a key here: https://www.flickr.com/services/apps/create/apply/
+	- ApiKey : your access key to the Flickr api – you can request a key here:
+	https://www.flickr.com/services/apps/create/apply/
 	
 In the sample application app.js you first need to import the flickrviewer component as shown below:
 

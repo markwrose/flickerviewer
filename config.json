@@ -1,0 +1,4 @@
+{
+  apiKey :"b8456b957137d462e7c8088dad495c9b", //Enter the Flickr apiKey for accessing your registered Flickr App
+  timeInterval : "3000" //Enter the displayInterval in milliseconds
+}

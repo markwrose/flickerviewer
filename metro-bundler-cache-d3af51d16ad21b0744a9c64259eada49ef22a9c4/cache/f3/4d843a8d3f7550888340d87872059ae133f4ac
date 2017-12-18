@@ -1,0 +1,3 @@
+module.exports = {
+  apiKey: "b8456b957137d462e7c8088dad495c9b",
+  timeInterval: "3000" };
